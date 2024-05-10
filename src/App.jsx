@@ -6,6 +6,7 @@ import { useGeo } from "./hooks/Geo";
 function App() {
   useEffect(() => {
     useGeo();
+    // use geo
   }, []);
   return (
     <>
