@@ -113,7 +113,15 @@ export const useGeo = () => {
       },
     });
     map.addControl(new mapboxgl.NavigationControl());
-
+    map.on('drag', function() {
+      setTimeout(function() {
+        console.log('New Center:', map.getCenter());
+        console.log('New Zoom:', map.getZoom());
+        const center = map.getCenter();
+        const zoom = map.getZoom();
+        console.log('REST API: https://example.com/map?latitude=' + center.lat + '&longitude=' + center.lng + '&zoom=' + zoom)
+      }, 2000);
+    });
     // Triger Layer
     map.on("click", "room-extrusion", (e) => {
       // Get the properties of the clicked feature
