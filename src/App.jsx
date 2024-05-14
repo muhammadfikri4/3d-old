@@ -1,15 +1,38 @@
-import { useEffect } from "react";
 import "./App.css";
-import Geo from "./Geo";
-import { useGeo } from "./hooks/Geo";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import RootViews from "./components/RootViews";
+import HomeViews from "./components/HomeViews";
+import Type2 from "./components/type2";
+import Type1 from "./components/type1";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootViews />,
+    children: [
+      {
+        path: "/",
+        element: <HomeViews />,
+      },
+      {
+        path: "/type-1",
+        element: <Type1 />,
+      },
+      {
+        path: "/type-2",
+        element: <Type2 />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  useEffect(() => {
-    useGeo();
-  }, []);
+  // useEffect(() => {
+  //   useGeo();
+  // }, []);
   return (
     <>
-      <div></div>
+      <RouterProvider router={router} />
     </>
   );
 }

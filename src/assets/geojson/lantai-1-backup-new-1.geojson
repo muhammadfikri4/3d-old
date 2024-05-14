@@ -1,0 +1,106 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                          103.8153255190278,
+                          1.28378932235033
+                        ],
+                        [
+                          103.81526520121508,
+                          1.2835582831812928
+                        ],
+                        [
+                          103.81550865263131,
+                          1.2834907151192851
+                        ],
+                        [
+                          103.81556897044612,
+                          1.283724660447234
+                        ],
+                        [
+                          103.8153255190278,
+                          1.28378932235033
+                        ]
+                    ],
+                    [
+                        [
+                          103.81532915263125,
+                          1.2837835100438468
+                        ],
+                        [
+                          103.81527174170094,
+                          1.283562642411809
+                        ],
+                        [
+                          103.81550429230879,
+                          1.2835037928089434
+                        ],
+                        [
+                          103.81556242996027,
+                          1.2837210277557176
+                        ],
+                        [
+                          103.81532915263125,
+                          1.2837835100438468
+                        ]
+                    ]
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "extrude": "true",
+                "iso_3166_1": "US",
+                "underground": "false",
+                "height": 0,
+                "altitude": 0,
+                "type": "building",
+                "min_height": 3,
+                "iso_3166_2": "US-NY",
+                "uuid": "802C4B41-D2F4-4A51-B2F7-18894CF2C6FE",
+                "center": [
+                    106.8271818989777,
+                    -6.178894795707535
+                ],
+                "tooltip": "<p><b>Rumahku Lantai - 1</b><br />Status: Tersedia<br /><img width=\"200px\" src=\"http:\/\/localhost:3000\/png\/aww.png\"></p>"
+            },
+            "id": 1,
+            "layer": {
+                "id": "3d-lantai-1",
+                "type": "fill-extrusion",
+                "source": "composite",
+                "source-layer": "building",
+                "minzoom": 8,
+                "filter": [
+                    "==",
+                    "extrude",
+                    "true"
+                ],
+                "paint": {
+                    "fill-extrusion-color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 0,
+                        "a": 1
+                    },
+                    "fill-extrusion-height": 3,
+                    "fill-extrusion-base": 0,
+                    "fill-extrusion-opacity": 0.5
+                },
+                "layout": {}
+            },
+            "source": "composite",
+            "sourceLayer": "building",
+            "state": {
+                "hover": true,
+                "select": true
+            },
+            "tooltip": null,
+            "label": null
+        }
+    ],
+    "type": "FeatureCollection"
+}

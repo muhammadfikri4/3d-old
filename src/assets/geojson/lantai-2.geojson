@@ -1,0 +1,84 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                          103.81531572417157,
+                          1.2838048163544329
+                        ],
+                        [
+                          103.81523214249563,
+                          1.283543115262603
+                        ],
+                        [
+                          103.81551687127973,
+                          1.283473328300829
+                        ],
+                        [
+                          103.81559769751544,
+                          1.2837341111497977
+                        ],
+                        [
+                          103.81531572417157,
+                          1.2838048163544329
+                        ]
+                    ]
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "extrude": "true",
+                "iso_3166_1": "US",
+                "underground": "false",
+                "height": 3,
+                "altitude": 3,
+                "type": "building",
+                "min_height": 6,
+                "iso_3166_2": "US-NY",
+                "uuid": "802C4B41-D2F4-4A51-B2F7-18894CF2C6FE",
+                "center": [
+                    106.8271818989777,
+                    -6.178894795707535
+                ],
+                "tooltip": "<p><b>Rumahku Lantai - 2</b><br />Status: Tersedia<br /><img width=\"200px\" src=\"http:\/\/localhost:3000\/png\/aww.png\"></p>"
+            },
+            "id": 2,
+            "layer": {
+                "id": "3d-lantai-2",
+                "type": "fill-extrusion",
+                "source": "composite",
+                "source-layer": "building",
+                "minzoom": 8,
+                "filter": [
+                    "==",
+                    "extrude",
+                    "true"
+                ],
+                "paint": {
+                    "fill-extrusion-color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 0,
+                        "a": 1
+                    },
+                    "fill-extrusion-height": 3,
+                    "fill-extrusion-base": 0,
+                    "fill-extrusion-opacity": 0.5
+                },
+                "layout": {}
+            },
+            "source": "composite",
+            "sourceLayer": "building",
+            "state": {
+                "hover": true,
+                "select": true
+            },
+            "tooltip": null,
+            "label": null
+        }
+    ],
+    "type": "FeatureCollection"
+}
