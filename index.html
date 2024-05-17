@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite + React</title>
+	<link
+		href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+		rel="stylesheet"
+	/>
+	<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+	<style type="text/css">
+		.box {
+			bottom: 5%;
+			left: 5%;
+			background-color: white;
+			position: absolute;
+			z-index: 1000;
+			border-color: 2px solid grey;
+			padding: 20px;
+			min-width: 400px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p>Select floor:</p>
+		<ul>
+			<li><a class="select-floor" index="2" href="#">Lantai 2</a></li>
+			<li><a class="select-floor" index="1" href="#">Lantai 1</a></li>
+			<li><a class="select-floor" index="0" href="#">Lantai GF</a></li>
+		</ul>
+	</div>
+	<div id="map"></div>
+	
+	<script type="module" src="/src/main.jsx"></script>
+	</script>
+</body>
 </html>
