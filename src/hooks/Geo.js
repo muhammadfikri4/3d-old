@@ -18,8 +18,8 @@ export const useGeo = () => {
 		antialias: true,
 	});
 
-	// Toggle Function (Select Floor)
-	let maxIndex = 2; // Ini perlu di get dari maximal level index yg ada di geojson
+  // Toogle Function (Select Floor)
+  let maxIndex = 2; // Ini perlu di get dari maximal level index yang ada di geojson
 	let currentIndex = 2; // Default value
 	$(".select-floor").click(function(ev) {
 		currentIndex = parseInt(ev.currentTarget.getAttribute('index'));
