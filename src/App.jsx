@@ -4,6 +4,8 @@ import RootViews from "./components/RootViews";
 import HomeViews from "./components/HomeViews";
 import Type2 from "./components/type2";
 import Type1 from "./components/type1";
+import { useEffect } from "react";
+import { useGeo } from "./hooks/Geo";
 
 const router = createBrowserRouter([
   {
@@ -27,9 +29,10 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  // useEffect(() => {
-  //   useGeo();
-  // }, []);
+  useEffect(() => {
+    useGeo();
+    // use geo
+  }, []);
   return (
     <>
       <RouterProvider router={router} />

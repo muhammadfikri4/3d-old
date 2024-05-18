@@ -8,7 +8,7 @@ const Type2 = () => {
   }, []);
   return (
     <>
-      <div class="floating-div">
+      <div className="floating-div">
         <h3>Console Output Click Event</h3>
         <div id="output-event-click"></div>
       </div>

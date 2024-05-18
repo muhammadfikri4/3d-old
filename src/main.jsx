@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("map")).render(
+  // root
   <React.StrictMode>
     <App />
   </React.StrictMode>

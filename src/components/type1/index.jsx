@@ -8,13 +8,13 @@ const Type1 = () => {
   }, []);
   return (
     <div id="content">
-      <div class="floating-div">
+      <div className="floating-div">
         <p>
           <b>OnHover Object Name</b>
         </p>
         <div id="hoverHistory"></div>
       </div>
-      <button class="btn-floating" id="flythrough">
+      <button className="btn-floating" id="flythrough">
         Start Flythrough
         <br />
         Zoom out/Putar lalu klik
